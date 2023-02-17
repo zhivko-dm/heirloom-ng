@@ -1,0 +1,30 @@
+
+
+<h5>Customer Entry</h5>
+
+<div [formGroup]="formGroup" class="col" style="margin-bottom: 5px">
+    <label class="form-label">First Name</label>
+    <input [formControlName]="'firstName'" type="text" class="form-control">
+
+
+    <label class="form-label">Middle Name</label>
+    <input [formControlName]="'firstName'" type="text" class="form-control">
+
+    <label class="form-label">Last Name</label>
+    <input [formControlName]="'lastName'" type="text" class="form-control">
+
+    <label class="form-label">Age</label>
+    <input [formControlName]="'age'"  class="form-control">
+    <!-- 
+      TODO 
+      update this error to conditionally be shown if the age field is invalid
+      currently it is always hidden
+    -->
+    <error style="display: none"></error>
+
+
+    <label class="form-label">Current Balance</label>
+    <input [formControlName]="'currentBalance'" class="form-control"> 
+</div>
+
+<button class="btn btn-primary">Save Customer</button>
